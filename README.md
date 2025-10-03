@@ -239,13 +239,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 **Aditya Dandotia**
-- 📧 Email: [your-email@example.com](mailto:your-email@example.com)
+- 📧 Email: [webpro.aditya@gmail.com](mailto:webpro.aditya@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/aditya-dandotia](https://linkedin.com/in/aditya-dandotia)
 - 🌐 Portfolio: [View Live Portfolio](#)
 
 ---
 
 <div align="center">
-  <p>Built with ❤️ using React, TypeScript, and Tailwind CSS</p>
+  <p>Built with React, TypeScript, and Tailwind CSS</p>
   <p>© 2024 Aditya Dandotia. All rights reserved.</p>
 </div>
