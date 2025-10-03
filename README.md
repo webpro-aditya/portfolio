@@ -10,7 +10,7 @@
 
 ## 🌟 Live Demo
 
-**Portfolio URL**: [View Live Portfolio](https://lovable.dev/projects/38e7b94c-0648-49ff-8031-4402a92b1946)
+**Portfolio URL**: [Deploy to see live version](#)
 
 ## 📋 Table of Contents
 
@@ -179,11 +179,12 @@ npm run lint
 
 ## 🌐 Deployment
 
-### Quick Deploy with Lovable
+### Quick Deploy Options
 
-1. Visit [Lovable Project](https://lovable.dev/projects/38e7b94c-0648-49ff-8031-4402a92b1946)
-2. Click **Share** → **Publish**
-3. Your portfolio will be live instantly
+Choose from various hosting platforms:
+- **Netlify**: Drag and drop the `dist` folder
+- **Vercel**: Connect your Git repository for automatic deployments
+- **GitHub Pages**: Enable Pages in repository settings
 
 ### Manual Deployment
 
@@ -240,7 +241,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Aditya Dandotia**
 - 📧 Email: [your-email@example.com](mailto:your-email@example.com)
 - 💼 LinkedIn: [linkedin.com/in/aditya-dandotia](https://linkedin.com/in/aditya-dandotia)
-- 🌐 Portfolio: [Live Demo](https://lovable.dev/projects/38e7b94c-0648-49ff-8031-4402a92b1946)
+- 🌐 Portfolio: [View Live Portfolio](#)
 
 ---
 
