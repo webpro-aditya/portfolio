@@ -79,74 +79,74 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 bg-card/30">
+    <section id="contact" className="py-16 sm:py-20 px-4 bg-card/30">
       <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">
+        <div className="text-center mb-12 sm:mb-16 space-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
             Let's discuss your project or opportunities
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Section */}
-          <div className="space-y-8">
-            <div className="gradient-border p-6 glow-effect">
-              <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/20 rounded-lg">
-                    <Mail className="h-5 w-5 text-primary" />
+          <div className="space-y-6 sm:space-y-8">
+            <div className="gradient-border p-4 sm:p-6 glow-effect">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Contact Information</h3>
+              <div className="space-y-4 sm:space-y-6">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="p-2 sm:p-3 bg-primary/20 rounded-lg flex-shrink-0">
+                    <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                   </div>
-                  <div>
-                    <p className="font-medium mb-1">Email</p>
+                  <div className="min-w-0">
+                    <p className="font-medium mb-1 text-sm sm:text-base">Email</p>
                     <a
                       href="mailto:webpro.aditya@gmail.com"
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base break-all"
                     >
                       webpro.aditya@gmail.com
                     </a>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/20 rounded-lg">
-                    <MapPin className="h-5 w-5 text-primary" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="p-2 sm:p-3 bg-primary/20 rounded-lg flex-shrink-0">
+                    <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-medium mb-1">Location</p>
-                    <p className="text-muted-foreground">Noida, India</p>
+                    <p className="font-medium mb-1 text-sm sm:text-base">Location</p>
+                    <p className="text-muted-foreground text-sm sm:text-base">Noida, India</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="gradient-border p-6">
-              <h3 className="text-xl font-bold mb-4">Available For</h3>
+            <div className="gradient-border p-4 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-bold mb-4">Available For</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span>Freelance Projects</span>
+                  <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                  <span className="text-sm sm:text-base">Freelance Projects</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                  <span>Full-time Opportunities</span>
+                  <div className="w-2 h-2 bg-secondary rounded-full flex-shrink-0"></div>
+                  <span className="text-sm sm:text-base">Full-time Opportunities</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span>Contract Work</span>
+                  <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                  <span className="text-sm sm:text-base">Contract Work</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                  <span>Technical Consulting</span>
+                  <div className="w-2 h-2 bg-secondary rounded-full flex-shrink-0"></div>
+                  <span className="text-sm sm:text-base">Technical Consulting</span>
                 </li>
               </ul>
             </div>
           </div>
 
           {/* Right Section - Form */}
-          <form onSubmit={handleSubmit} className="gradient-border p-8 space-y-6" noValidate>
+          <form onSubmit={handleSubmit} className="gradient-border p-4 sm:p-6 lg:p-8 space-y-4 sm:space-y-6" noValidate>
             <div className="space-y-2">
               <label htmlFor="name" className="text-sm font-medium">
                 Name

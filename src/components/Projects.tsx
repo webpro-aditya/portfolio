@@ -72,28 +72,28 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="gradient-border p-6 hover:glow-effect transition-all duration-300 group animate-fade-in-up"
+              className="gradient-border p-4 sm:p-6 hover:glow-effect transition-all duration-300 group animate-fade-in-up"
               style={{ animationDelay: `${idx * 0.1}s` }}
             >
-              <div className="flex items-start gap-4 mb-4">
-                <div className={`w-12 h-12 bg-${project.color}/10 rounded-lg flex items-center justify-center border border-${project.color}/20 group-hover:bg-${project.color}/20 transition-colors`}>
+              <div className="flex flex-col sm:flex-row items-start gap-4 mb-4">
+                <div className={`w-12 h-12 bg-${project.color}/10 rounded-lg flex items-center justify-center border border-${project.color}/20 group-hover:bg-${project.color}/20 transition-colors flex-shrink-0`}>
                   <div className={`text-${project.color}`}>
                     {project.icon}
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-2 gradient-text">
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-2 gradient-text break-words">
                     {project.title}
                   </h3>
                   <div className="flex flex-wrap gap-2 mb-3">
                     {project.technologies.map((tech, techIdx) => (
                       <span
                         key={techIdx}
-                        className={`px-3 py-1 text-sm bg-${project.color}/10 text-${project.color} rounded-full border border-${project.color}/20`}
+                        className={`px-2 sm:px-3 py-1 text-xs sm:text-sm bg-${project.color}/10 text-${project.color} rounded-full border border-${project.color}/20`}
                       >
                         {tech}
                       </span>
@@ -102,26 +102,26 @@ const Projects = () => {
                 </div>
               </div>
 
-              <p className="text-muted-foreground mb-4 leading-relaxed">
+              <p className="text-muted-foreground mb-4 leading-relaxed text-sm sm:text-base">
                 {project.description}
               </p>
 
               <div className="space-y-2">
-                <h4 className="font-semibold text-foreground flex items-center gap-2">
-                  <Code className="h-4 w-4 text-primary" />
+                <h4 className="font-semibold text-foreground flex items-center gap-2 text-sm sm:text-base">
+                  <Code className="h-4 w-4 text-primary flex-shrink-0" />
                   Key Achievements
                 </h4>
                 {project.highlights.map((highlight, hIdx) => (
                   <div key={hIdx} className="flex items-start gap-2">
                     <div className={`w-1.5 h-1.5 bg-${project.color} rounded-full mt-2 flex-shrink-0`}></div>
-                    <span className="text-sm text-muted-foreground">{highlight}</span>
+                    <span className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{highlight}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-6 pt-4 border-t border-border/50">
+              <div className="mt-4 sm:mt-6 pt-4 border-t border-border/50">
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-muted-foreground">
+                  <span className="text-xs sm:text-sm text-muted-foreground">
                     Enterprise Solution
                   </span>
                   {/* <div className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors cursor-pointer">
