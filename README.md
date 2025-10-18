@@ -10,7 +10,7 @@
 
 ## 🌟 Live Demo
 
-**Portfolio URL**: [Deploy to see live version](#)
+**Portfolio URL**: [Live URL](http://portfolio.tedtawks.com/)
 
 ## 📋 Table of Contents
 
